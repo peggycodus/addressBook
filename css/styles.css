@@ -10,3 +10,14 @@
   color: blue;
   text-decoration: underline;
 }
+
+hr{
+  background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 2px;
+}
+
+.required {
+  color: red;
+}
