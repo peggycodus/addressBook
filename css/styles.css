@@ -21,3 +21,11 @@ hr{
 .required {
   color: red;
 }
+
+#phoneEmail{
+  display:none;
+}
+
+form#extraInfo {
+  display: none;
+}

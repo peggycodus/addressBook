@@ -55,7 +55,7 @@ $(document).ready(function() {
         $("#contactDetails").show();
 
         newContact.addresses.forEach(function(address) {
-          $("dl#addresses").append("<dd>Street: " + address.street + "</dd><dd>City: " + address.city + "</dd><dd>State: " + address.state + "</dd><hr />");
+          $("dl#addresses").append("<dd>Street: " + address.street + "</dd><dd>City: " + address.city + "</dd><dd>State: " + address.state + "</dd>");
         });
       });
 
@@ -66,5 +66,20 @@ $(document).ready(function() {
       $("input.new-state").val("");
     } //End if statement
   });
+
+  $("form#add-extraInfo").submit(function(event) {
+    event.preventDefault();
+    $("form#extraInfo").show();
+    var newWorkPhone = $("input.new-workphone").val();
+    var newMobilePhone = $("input.new-mobilephone").val();
+    var newEmail = $("input.new-email").val();
+
+    $("dl#phoneEmail").append("<dd>Work Phone: " + newWorkPhone + "</dd><dd>Mobile Phone: " + newMobilePhone + "</dd><dd>Email: " + newEmail + "</dd>");
+     $("#phoneEmail").show();
+
+    $("input#new-workphone").val("");
+    $("input#new-mobilephone").val("");
+    $("input.new-email").val("");
+  })
 });
 
