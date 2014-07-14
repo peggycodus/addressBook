@@ -1,0 +1,12 @@
+.contact-list{
+  display:none;
+}
+
+#contactDetails {
+  display: none;
+}
+
+#contact-name {
+  color: blue;
+  text-decoration: underline;
+}
